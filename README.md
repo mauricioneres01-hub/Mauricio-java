@@ -1,7 +1,7 @@
 # 🧬 Trabalho Prático: Teoria dos Conjuntos e Conjuntos Numéricos - Disciplina Matemática para computação
 
-* **Nome do Integrante 1: Mauricio Neres  
-* **Nome do Integrante 2: Vicent Ka Soen Lam 
+* **Nome do Integrante 1: Mauricio Neres  - RA: 2161392613021
+* **Nome do Integrante 2: Vincent Ka Soen Lam - RA: 2161392613004
 
 Este projeto é um laboratório computacional desenvolvido em **Java** para aplicar conceitos matemáticos de Teoria dos Conjuntos, Classificação de Conjuntos Numéricos e Operações com Intervalos Reais.
 
