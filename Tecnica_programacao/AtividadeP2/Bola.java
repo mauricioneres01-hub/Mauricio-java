@@ -36,27 +36,6 @@ public class Bola {
         this.velX = -this.velX;
     }
 
-public void acelerar() {
-        int limiteX = velInicialX * 3;
-        int limiteY = velInicialY * 3;
-
-        // Calcula a nova velocidade acrescida (+15%)
-        int novaVelX = (int)(this.velX * 1.15);
-        int novaVelY = (int)(this.velY * 1.15);
-
-        // Aplica o limitador respeitando a direção (sinal positivo/negativo)
-        if (Math.abs(novaVelX) <= limiteX) {
-            this.velX = novaVelX;
-        } else {
-            this.velX = (this.velX > 0) ? limiteX : -limiteX;
-        }
-
-        if (Math.abs(novaVelY) <= limiteY) {
-            this.velY = novaVelY;
-        } else {
-            this.velY = (this.velY > 0) ? limiteY : -limiteY;
-        }
-    }
 
     public void reiniciar(int larguraCampo, int alturaCampo) {
         this.x = (larguraCampo - diametro) / 2;

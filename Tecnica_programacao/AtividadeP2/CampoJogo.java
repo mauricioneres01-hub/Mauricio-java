@@ -23,7 +23,7 @@ public class CampoJogo extends JPanel implements KeyListener {
 
     public CampoJogo(int dificuldade) {
         this.nivelDificuldade = dificuldade;
-        this.velComputador = (dificuldade == 1) ? 8 : 4; 
+        this.velComputador = (dificuldade == 1) ? 5 : 4; 
 
         setPreferredSize(new Dimension(LARGURA, ALTURA));
         setBackground(Color.BLACK);
@@ -67,15 +67,10 @@ public class CampoJogo extends JPanel implements KeyListener {
         // 4. Tratamento de colisões com as Raquetes + ACELERAÇÃO PROGRESSIVA
         if (bola.getLimites().intersects(jogador.getLimites()) && bola.getVelX() < 0) {
             bola.inverterVelX();
-            // Multiplica a velocidade por 1.15 (15% mais rápido a cada batida)
-            bola.setVelX((int)(bola.getVelX() * 1.15));
-            bola.setVelY((int)(bola.getVelY() * 1.15));
         }
         if (bola.getLimites().intersects(computador.getLimites()) && bola.getVelX() > 0) {
             bola.inverterVelX();
-            // Multiplica a velocidade por 1.15 (15% mais rápido a cada batida)
-            bola.setVelX((int)(bola.getVelX() * 1.50));
-            // bola.setVelY((int)(bola.getVelY() * 2.00));
+      
         }
 
         // 5. Verificação de Pontos
